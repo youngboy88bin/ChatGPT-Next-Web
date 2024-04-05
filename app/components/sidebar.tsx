@@ -155,7 +155,7 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          NextChat
+          AI_GPT_BA
         </div>
         <div className={styles["sidebar-sub-title"]}>
           Build your own AI assistant.
@@ -221,6 +221,9 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<GithubIcon />} shadow />
             </a>
           </div>
+          <Link to={Path.CallCustomer}>
+            <IconButton text="联系客服" shadow />
+          </Link>
         </div>
         <div>
           <IconButton

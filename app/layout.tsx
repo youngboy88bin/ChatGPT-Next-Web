@@ -10,7 +10,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 const serverConfig = getServerSideConfig();
 
 export const metadata: Metadata = {
-  title: "NextChat",
+  title: "AI_GPT_FREE",
   description: "Your personal ChatGPT Chat Bot.",
   viewport: {
     width: "device-width",
@@ -35,6 +35,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="keywords" content="AI,gpt,GPT,chatGPT,chat" />
+        <meta
+          name="description"
+          content="这里是您网页的描述，包含关键词1和关键词2等相关信息"
+        />
         <meta name="config" content={JSON.stringify(getClientConfig())} />
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
